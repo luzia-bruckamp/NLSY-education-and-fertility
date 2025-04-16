@@ -8,11 +8,11 @@ This analysis uses data from the National Longitudinal Survey of Youth 1997 (NLS
 
 To get the data and replicate my analyses, you have to follow the steps below. The data is downloaded from the NLS Investigator website and the data cleaning and analysis is done in R. You can find the tagset and the code in the folder called ‘code’.
 
-Go to https://www.nlsinfo.org/investigator/pages/home and click on register to create an account.
-Once you’re logged in, it should prompt you to choose the study you want to work with. (If you’re not prompted automatically, click on ‘Search’ in the menu in the top right corner.) Choose NLSY97. When prompted to choose a substudy next, choose ‘NLSY97 1997-2021 (rounds 1-20)’.
-You should be in the ‘Choose tagsets’ tab automatically. Now you need to upload the tagset called ‘tagset.NLSY97’ in order to choose the right variables. Once the tagset has been uploaded, you should see that there are 1,234 variables selected. Now go to the ‘Save/Download’ tab on the right and then select ‘Basic download’ in the second tab. You can change the filename to ‘nlsy97’ from ‘default’ to have the name right for the cleaning script immediately. Download the folder. (You might have to wait a few seconds for the download to become available.)
-Now you are ready to run the cleaning script ‘1_nlsy_clean.R’. Make sure that you set the working directory in the R script to the folder with the data. You will be using only the csv file from the download and it should be named ‘nlsy97.csv’.
-The cleaning script exports the cleaned data to the working directory with the original data that you set in the first step. Make sure that you set the same working directory in the analysis script ‘2_nlsy_analysis.R’ and then you can run this as well.
+1. Go to https://www.nlsinfo.org/investigator/pages/home and click on register to create an account.
+2. Once you’re logged in, it should prompt you to choose the study you want to work with. (If you’re not prompted automatically, click on ‘Search’ in the menu in the top right corner.) Choose NLSY97. When prompted to choose a substudy next, choose ‘NLSY97 1997-2021 (rounds 1-20)’.
+3. You should be in the ‘Choose tagsets’ tab automatically. Now you need to upload the tagset called ‘tagset.NLSY97’ in order to choose the right variables. Once the tagset has been uploaded, you should see that there are 1,234 variables selected. Now go to the ‘Save/Download’ tab on the right and then select ‘Basic download’ in the second tab. You can change the filename to ‘nlsy97’ from ‘default’ to have the name right for the cleaning script immediately. Download the folder. (You might have to wait a few seconds for the download to become available.)
+4. Now you are ready to run the cleaning script ‘1_nlsy_clean.R’. Make sure that you set the working directory in the R script to the folder with the data. You will be using only the csv file from the download and it should be named ‘nlsy97.csv’.
+5. The cleaning script exports the cleaned data to the working directory with the original data that you set in the first step. Make sure that you set the same working directory in the analysis script ‘2_nlsy_analysis.R’ and then you can run this as well.
 
 ## Methodology
 
